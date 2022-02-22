@@ -12,6 +12,7 @@ const incUpper= document.getElementById("upper");
 const incNumbers = document.getElementById("numbers");
 const incSymbols = document.getElementById("symbols");
 const generateBtn = document.getElementById("generate");
+const settings = document.getElementById("settings");
 
 //generating password function
 
@@ -23,7 +24,6 @@ const generatePassword = (length, characters) => {
     );
   }
   return password;
-  
 };
 
 //taking in user-selected criteria
@@ -35,6 +35,14 @@ generateBtn.addEventListener("click", () => {
   incSymbols.checked ? (characters += symbols) : "";
   passwordTxt.value = generatePassword(length.value, characters);
   document.getElementById("password").textContent = passwordTxt;
+  
+  //hide settings until button is clicked
+  if (settings.style.display === "none"){
+    settings.style.display = "block"
+  }else {
+    settings.style.display = "block";
+  };
+
 });
 
 
