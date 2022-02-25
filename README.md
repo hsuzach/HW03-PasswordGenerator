@@ -1,5 +1,7 @@
 # HW03-PasswordGenerator
 
+You can reach this application at https://hsuzach.github.io/PasswordGenerator/
+
 ![image](https://user-images.githubusercontent.com/30445082/155227838-4ff4a9a0-d5ef-4102-a944-08231bef6811.png)
 
 <br>
